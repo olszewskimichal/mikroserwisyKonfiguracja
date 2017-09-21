@@ -2,7 +2,7 @@ spring:
   profiles:
     active: test
   application:
-    name: account-service
+    name: order-service
 ---
 spring:
   profiles: test

@@ -2,14 +2,10 @@ spring:
   profiles:
     active: test
   application:
-    name: account-service
+    name: online-store-web
 ---
 spring:
   profiles: test
-  jpa:
-    database: H2
-  datasource:
-    initialize: false
 eureka:
   instance:
     prefer-ip-address: true

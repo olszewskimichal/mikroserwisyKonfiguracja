@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: test
+  application:
+    name: inventory-service
 ---
 spring:
   profiles: test
