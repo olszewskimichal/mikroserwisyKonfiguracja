@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: shopping-cart-service
+---
+spring:
+  profiles: test
+  jpa:
+    database: H2
+  datasource:
+    initialize: false
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery-service:8761/eureka/
